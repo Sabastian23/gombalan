@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untuk Kamu ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 id="text">Masukkan nama dulu ya 😊</h1>
+
+    <input type="text" id="nama" placeholder="Masukkan nama dia ❤️">
+    <br><br>
+
+    <button onclick="gombal()">Klik Aku</button>
+
+    <script>
+        function gombal() {
+            var namaOrang = document.getElementById("nama").value;
+
+            if (namaOrang != "Gledis" && namaOrang !=  "gledis") {
+                alert("heyyy ini bukan buat eloo kaleee 😜");
+                return;
+            }
+
+            document.getElementById("text").innerHTML =
+            "Hallow " + namaOrang + " Manissss ❤️<br><br>" +
+            "Tau ndakkk?<br><br>" +
+            "Peta diciptakan supaya kita bisa nemuin Tujuan<br>" +
+            "Tapi Keknya setelah kenal" + namaOrang + "Aku keknya ga perlu peta 🌈<br><br>" +
+            "Krna kan" + namaOrang + "Lah tujuan ku  💖";
+        }
+    </script>
+
+</body>
+</html>

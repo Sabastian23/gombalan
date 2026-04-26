@@ -1,36 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Untuk Kamu ❤️</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahasia Untuk Kamu ❤️</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <h1 id="text">Masukkan nama dulu ya 😊</h1>
+<div class="box">
+    <h2>Masukkan Nama Dulu 💌</h2>
+    <input type="text" id="nama" placeholder="Masukkan Nama Kamu">
+    <br>
+    <button onclick="cekNama()">Masuk</button>
 
-    <input type="text" id="nama" placeholder="Masukkan nama dia ❤️">
-    <br><br>
+    <div id="gombalan"></div>
+    <button id="lanjutBtn" onclick="nextGombal()">Lanjut ❤️</button>
+</div>
+<audio id="bgMusic" src="Rahasia Hati.mp3" loop></audio>
 
-    <button onclick="gombal()">Klik Aku</button>
+<div class="hearts"></div>
+<!-- Musik Rahasia Hati -->
+<iframe id="ytMusic"
+    width="0"
+    height="0"
+    src=""
+    frameborder="0"
+    allow="autoplay">
+</iframe>
 
-    <script>
-        function gombal() {
-            var namaOrang = document.getElementById("nama").value;
-
-            if (namaOrang != "Gledis" && namaOrang !=  "gledis") {
-                alert("heyyy ini bukan buat eloo kaleee 😜");
-                return;
-            }
-
-            document.getElementById("text").innerHTML =
-            "Hallow " + namaOrang + " Manissss ❤️<br><br>" +
-            "Tau ndakkk?<br><br>" +
-            "Peta diciptakan supaya kita bisa nemuin Tujuan<br>" +
-            "Tapi Keknya setelah kenal" + namaOrang + "Aku keknya ga perlu peta 🌈<br><br>" +
-            "Krna kan" + namaOrang + "Lah tujuan ku  💖";
-        }
-    </script>
-
+<script src="script.js"></script>
 </body>
 </html>
